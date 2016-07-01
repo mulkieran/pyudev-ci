@@ -1,0 +1,26 @@
+<job retention_tag="scratch">
+    <whiteboard></whiteboard>
+    <recipeSet priority="Normal">
+        <recipe whiteboard="" role="None" ks_meta="" kernel_options="" kernel_options_post="">
+            <autopick random="true"/>
+            <watchdog/>
+            <packages>
+                <package name="python-tox"/>
+            </packages>
+            <ks_appends/>
+            <repos/>
+            <distroRequires>
+                <and>
+                    <distro_family op="=" value="Fedora24"/>
+                    <distro_variant op="=" value="Server"/>
+                    <distro_arch op="=" value="x86_64"/>
+                </and>
+            </distroRequires>
+            <hostRequires>
+                <hypervisor op="=" value=""/>
+            </hostRequires>
+            <task name="/tools/beaker/Library/Runs-pyudev-test-suite"/>
+            <partitions/>
+        </recipe>
+    </recipeSet>
+</job>
