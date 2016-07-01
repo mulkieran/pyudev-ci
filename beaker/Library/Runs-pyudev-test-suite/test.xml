@@ -1,7 +1,7 @@
 <job retention_tag="scratch">
     <whiteboard></whiteboard>
     <recipeSet priority="Normal">
-        <recipe whiteboard="" role="None" ks_meta="" kernel_options="" kernel_options_post="">
+        <recipe>
             <autopick random="true"/>
             <watchdog/>
             <packages>
@@ -12,9 +12,30 @@
             <distroRequires>
                 <or>
                     <distro_family op="=" value="Fedora23"/>
+                    <distro_family op="=" value="RedHatEnterpriseLinux7"/>
+                </or>
+            </distroRequires>
+            <hostRequires>
+                <hypervisor op="=" value=""/>
+            </hostRequires>
+            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
+            <partitions/>
+            <reservesys/>
+        </recipe>
+    </recipeSet>
+    <recipeSet priority="Normal">
+        <recipe>
+            <autopick random="true"/>
+            <watchdog/>
+            <packages>
+                <package name="python3-tox"/>
+            </packages>
+            <ks_appends/>
+            <repos/>
+            <distroRequires>
+                <or>
                     <distro_family op="=" value="Fedora24"/>
                     <distro_family op="=" value="Fedorarawhide"/>
-                    <distro_family op="=" value="RedHatEnterpriseLinux7"/>
                 </or>
             </distroRequires>
             <hostRequires>
