@@ -19,8 +19,9 @@
             <hostRequires>
                 <hypervisor op="=" value=""/>
             </hostRequires>
-            <task name="/tools/beaker/Library/Runs-pyudev-test-suite"/>
+            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
             <partitions/>
+            <reservesys/>
         </recipe>
     </recipeSet>
 </job>
