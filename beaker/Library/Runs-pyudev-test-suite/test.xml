@@ -11,10 +11,7 @@
             <ks_appends/>
             <repos/>
             <distroRequires>
-                <or>
-                    <family op="=" value="Fedora23"/>
-                    <family op="=" value="RedHatEnterpriseLinux7"/>
-                </or>
+                <family op="=" value="Fedora23"/>
             </distroRequires>
             <hostRequires>
                 <hypervisor op="=" value=""/>
@@ -35,10 +32,28 @@
             <ks_appends/>
             <repos/>
             <distroRequires>
-                <or>
-                    <family op="=" value="Fedora24"/>
-                    <family op="=" value="Fedorarawhide"/>
-                </or>
+                <family op="=" value="Fedora24"/>
+            </distroRequires>
+            <hostRequires>
+                <hypervisor op="=" value=""/>
+            </hostRequires>
+            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
+            <partitions/>
+            <reservesys/>
+        </recipe>
+    </recipeSet>
+    <recipeSet priority="Normal">
+        <recipe>
+            <autopick random="true"/>
+            <watchdog/>
+            <packages>
+                <package name="git"/>
+                <package name="python3-tox"/>
+            </packages>
+            <ks_appends/>
+            <repos/>
+            <distroRequires>
+                <family op="=" value="Fedorarawhide"/>
             </distroRequires>
             <hostRequires>
                 <hypervisor op="=" value=""/>
