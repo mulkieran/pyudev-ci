@@ -5,6 +5,7 @@
             <autopick random="true"/>
             <watchdog/>
             <packages>
+                <package name="git"/>
                 <package name="python-tox"/>
             </packages>
             <ks_appends/>
@@ -28,6 +29,7 @@
             <autopick random="true"/>
             <watchdog/>
             <packages>
+                <package name="git"/>
                 <package name="python3-tox"/>
             </packages>
             <ks_appends/>
