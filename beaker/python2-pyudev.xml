@@ -16,49 +16,7 @@
             <hostRequires>
                 <hypervisor op="=" value=""/>
             </hostRequires>
-            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
-            <partitions/>
-            <reservesys/>
-        </recipe>
-    </recipeSet>
-    <recipeSet priority="Normal">
-        <recipe>
-            <autopick random="true"/>
-            <watchdog/>
-            <packages>
-                <package name="git"/>
-                <package name="python3-tox"/>
-            </packages>
-            <ks_appends/>
-            <repos/>
-            <distroRequires>
-                <family op="=" value="Fedora24"/>
-            </distroRequires>
-            <hostRequires>
-                <hypervisor op="=" value=""/>
-            </hostRequires>
-            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
-            <partitions/>
-            <reservesys/>
-        </recipe>
-    </recipeSet>
-    <recipeSet priority="Normal">
-        <recipe>
-            <autopick random="true"/>
-            <watchdog/>
-            <packages>
-                <package name="git"/>
-                <package name="python3-tox"/>
-            </packages>
-            <ks_appends/>
-            <repos/>
-            <distroRequires>
-                <family op="=" value="Fedorarawhide"/>
-            </distroRequires>
-            <hostRequires>
-                <hypervisor op="=" value=""/>
-            </hostRequires>
-            <task name="/tools/beaker/Library/Runs-pyudev-test-suite" role="STANDALONE"/>
+            <task name="/tools/beaker/Library/pyudev-test-suite-2" role="STANDALONE"/>
             <partitions/>
             <reservesys/>
         </recipe>
