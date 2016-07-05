@@ -12,8 +12,8 @@
             <repos/>
             <distroRequires>
                 <or>
-                    <distro_family op="=" value="Fedora23"/>
-                    <distro_family op="=" value="RedHatEnterpriseLinux7"/>
+                    <family op="=" value="Fedora23"/>
+                    <family op="=" value="RedHatEnterpriseLinux7"/>
                 </or>
             </distroRequires>
             <hostRequires>
@@ -36,8 +36,8 @@
             <repos/>
             <distroRequires>
                 <or>
-                    <distro_family op="=" value="Fedora24"/>
-                    <distro_family op="=" value="Fedorarawhide"/>
+                    <family op="=" value="Fedora24"/>
+                    <family op="=" value="Fedorarawhide"/>
                 </or>
             </distroRequires>
             <hostRequires>
