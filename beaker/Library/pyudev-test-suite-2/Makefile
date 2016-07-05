@@ -1,7 +1,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-#   Makefile of /tools/beaker/Library/Runs-pyudev-test-suite
-#   Description: Runs pyudev test suite.
+#   Makefile of /tools/beaker/Library/pyudev-test-suite-2
+#   Description: Runs pyudev test suite for Python 2.
 #   Author: the mulhern <amulhern@redhat.com>
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,7 +23,7 @@
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-export TEST=/tools/beaker/Library/Runs-pyudev-test-suite
+export TEST=/tools/beaker/Library/pyudev-test-suite-2
 export TESTVERSION=1.0
 
 BUILT_FILES=
@@ -49,12 +49,12 @@ $(METADATA): Makefile
 	@echo "Name:            $(TEST)" >> $(METADATA)
 	@echo "TestVersion:     $(TESTVERSION)" >> $(METADATA)
 	@echo "Path:            $(TEST_DIR)" >> $(METADATA)
-	@echo "Description:     Runs pyudev test suite." >> $(METADATA)
+	@echo "Description:     Runs pyudev test suite for Python 2." >> $(METADATA)
 	@echo "Type:            Library" >> $(METADATA)
 	@echo "TestTime:        20m" >> $(METADATA)
 	@echo "RunFor:          beaker" >> $(METADATA)
 	@echo "Requires:        beaker" >> $(METADATA)
-	@echo "Provides:        library(beaker/Runs-pyudev-test-suite)" >> $(METADATA)
+	@echo "Provides:        library(beaker/pyudev-test-suite-2)" >> $(METADATA)
 	@echo "Priority:        Normal" >> $(METADATA)
 	@echo "License:         GPLv2+" >> $(METADATA)
 	@echo "Confidential:    no" >> $(METADATA)

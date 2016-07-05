@@ -2,8 +2,8 @@
 # vim: dict+=/usr/share/beakerlib/dictionary.vim cpt=.,w,b,u,t,i,k
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-#   lib.sh of /tools/beaker/Library/Runs-pyudev-test-suite
-#   Description: Runs pyudev test suite.
+#   lib.sh of /tools/beaker/Library/pyudev-test-suite-2
+#   Description: Runs pyudev test suite for Python 2.
 #   Author: the mulhern <amulhern@redhat.com>
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,7 +24,7 @@
 #   along with this program. If not, see http://www.gnu.org/licenses/.
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#   library-prefix = Runs-pyudev-test-suite
+#   library-prefix = pyudev-test-suite-2
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 true <<'=cut'
@@ -32,7 +32,7 @@ true <<'=cut'
 
 =head1 NAME
 
-beaker/Runs-pyudev-test-suite - Runs pyudev test suite.
+beaker/pyudev-test-suite-2 - Runs pyudev test suite for Python 2.
 
 =head1 DESCRIPTION
 

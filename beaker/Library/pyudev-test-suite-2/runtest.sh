@@ -2,8 +2,8 @@
 # vim: dict+=/usr/share/beakerlib/dictionary.vim cpt=.,w,b,u,t,i,k
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-#   runtest.sh of /tools/beaker/Library/Runs-pyudev-test-suite
-#   Description: Runs pyudev test suite.
+#   runtest.sh of /tools/beaker/Library/pyudev-test-suite-2
+#   Description: Runs pyudev test suite for Python 2.
 #   Author: the mulhern <amulhern@redhat.com>
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -35,8 +35,6 @@ rlJournalStart
     rlPhaseStartTest
         rlRun "git clone https://github.com/pyudev/pyudev.git"
         rlRun "cd pyudev"
-        rlRun "git fetch origin pull/190/head:190"
-        rlRun "git checkout 190"
         rlRun "tox -e py27"
         rlRun "cd .."
     rlPhaseEnd
