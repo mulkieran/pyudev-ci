@@ -35,7 +35,8 @@ rlJournalStart
     rlPhaseStartTest
         rlRun "git clone https://github.com/pyudev/pyudev.git"
         rlRun "cd pyudev"
-        rlRun "tox -e py34"
+        rlRun "python3-tox -e py27"
+        rlRun "python3-tox -e py34"
         rlRun "cd .."
     rlPhaseEnd
 rlJournalPrintText

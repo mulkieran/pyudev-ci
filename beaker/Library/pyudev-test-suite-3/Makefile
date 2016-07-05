@@ -24,7 +24,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export TEST=/tools/beaker/Library/pyudev-test-suite-3
-export TESTVERSION=1.0
+export TESTVERSION=1.1
 
 BUILT_FILES=
 
